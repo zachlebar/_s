@@ -92,6 +92,7 @@ template {
 
 a {
 	background-color: transparent;
+	white-space: nowrap;
 }
 
 a:active,
