@@ -114,8 +114,8 @@ add_action( 'widgets_init', '_zen_widgets_init' );
  * Enqueue scripts and styles.
  */
 function _zen_scripts() {
-	wp_enqueue_style( '_zen-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'pure-css', 'http://yui.yahooapis.com/pure/0.6.0/pure-min.css', false, '1.0.0');
+	wp_enqueue_style( '_zen-style', get_stylesheet_uri() );
 	
 	if (!is_admin()) {
 		wp_deregister_script('jquery');
